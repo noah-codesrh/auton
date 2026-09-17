@@ -155,7 +155,7 @@ export function DashboardPage() {
                 sub="forward tiers"
               />
               <StatCard
-                label="Claimable USDC"
+                label="Claimable USDG"
                 value={loading ? "..." : `$${data.staking.claimableUsdcYield}`}
                 accent
                 sub={

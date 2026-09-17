@@ -42,7 +42,7 @@ Auton is designed as a modular stack of eight market layers. The first two are l
 `$AUTO` is the settlement and collateral asset of the venue.
 
 - **Futures collateral** — open positions post `$AUTO` as margin, locking it off the market.
-- **Verifier staking** — compute suppliers stake `$AUTO` to guarantee their SLA, earning settlement fees in `$USDC` (and risking slashing if they go offline).
+- **Verifier staking** — compute suppliers stake `$AUTO` to guarantee their SLA, earning settlement fees in `$USDG` (and risking slashing if they go offline).
 - **Buyback & burn** — 100% of futures settlement fees go to the treasury; half burns `$AUTO`, half is paid to stakers.
 
 **Contract address (Solana):** `7io8XEMRMoQoCvD3phKR2QR5EeoMmJnYM1dsjVdYpump`

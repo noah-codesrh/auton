@@ -3,7 +3,6 @@ import { Link } from "react-router";
 import { useBackendSession } from "../hooks/use-backend-session";
 import { detectWebGpu, useEarn } from "../hooks/use-earn";
 import { getBackendApiUrl } from "../lib/api/providers";
-import { DOCS_URL } from "../lib/site-urls";
 import { LoginModal } from "./login-modal";
 
 type OsTab = "macos" | "windows" | "linux";
@@ -151,7 +150,7 @@ export function EarnPage() {
               Worker Node
             </h1>
             <p className="pixel-sans mt-3 max-w-xl text-sm leading-relaxed text-black/60">
-              Contribute GPU compute to the Auton network and earn USDC
+              Contribute GPU compute to the Auton network and earn USDG
               settlements from capacity commitments.
             </p>
           </div>
@@ -185,7 +184,7 @@ export function EarnPage() {
                   ? syncing
                     ? "Connecting account..."
                     : "Sign in to track earnings and deploy your node."
-                  : "Connect wallet to enroll a worker and earn USDC."}
+                  : "Connect wallet to enroll a worker and earn USDG."}
               </p>
             )}
 
@@ -197,7 +196,7 @@ export function EarnPage() {
 
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
               <MetricBox
-                label="$USDC"
+                label="$USDG"
                 value={status?.earningsUsdc ?? "0.00"}
               />
               <MetricBox
@@ -368,18 +367,6 @@ export function EarnPage() {
             </article>
           </div>
         </section>
-
-        <p className="pixel-sans mt-10 text-center text-xs text-black/30">
-          Provider guide ·{" "}
-          <a
-            href={`${DOCS_URL}/provider-guide`}
-            className="text-[#80a0c1] hover:underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {DOCS_URL.replace(/^https?:\/\//, "")}
-          </a>
-        </p>
       </main>
 
       <LoginModal open={loginOpen} onClose={() => setLoginOpen(false)} />

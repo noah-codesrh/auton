@@ -6,7 +6,7 @@ export function meta({}: Route.MetaArgs) {
   return siteMeta({
     title: "Stake $AUTO — Auton",
     description:
-      "Stake $AUTO in your own on-chain vault. Earn USDC rewards. Self-custody staking powered by Streamflow.",
+      "Stake $AUTO in your own on-chain vault. Earn USDG rewards. Self-custody staking powered by Streamflow.",
     path: "/staking",
   });
 }

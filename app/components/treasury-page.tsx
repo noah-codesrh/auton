@@ -44,7 +44,7 @@ export function TreasuryPage() {
           <p className="pixel-sans mt-4 max-w-3xl text-sm leading-relaxed text-black/60 md:text-base">
             100% of the compute margin and a share of{" "}
             <span className="dollar">$</span>AUTO trading fees flow into this
-            treasury. Half funds buybacks; half is paid to stakers in USDC.{" "}
+            treasury. Half funds buybacks; half is paid to stakers in USDG.{" "}
             <span className="dollar">$</span>AUTO supply is locked on-chain via{" "}
             <a
               href={autoTreasuryConfig.streamflowLockUrl}
@@ -86,7 +86,7 @@ export function TreasuryPage() {
               {loading ? "..." : formatUsd(stats.buybacksUsdcCompleted)}
             </div>
             <div className="pixel-sans mt-2 text-sm text-black/70">
-              buybacks USDC completed
+              buybacks USDG completed
             </div>
             <div className="pixel-sans mt-1 text-xs text-black/45">
               {loading

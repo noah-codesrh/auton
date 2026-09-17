@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { DOCS_URL, TRADE_APP_URL } from "../lib/site-urls";
+import { TRADE_APP_URL } from "../lib/site-urls";
 
 const FOOTER_LINKS = {
   Product: [
@@ -7,11 +7,6 @@ const FOOTER_LINKS = {
     {
       label: "Dashboard",
       href: `${TRADE_APP_URL}/dashboard`,
-      external: true,
-    },
-    {
-      label: "Docs",
-      href: DOCS_URL,
       external: true,
     },
     { label: "Trade", href: `${TRADE_APP_URL}/trade`, external: true },
@@ -24,14 +19,14 @@ const FOOTER_LINKS = {
   ],
   Resources: [
     { label: "Blog", href: "#", external: false },
-    { label: "X", href: "https://x.com/autonai_robinhood", external: true },
-    { label: "Telegram", href: "https://t.me/autonai_robinhood", external: true },
+    { label: "X", href: "https://x.com/autonai_rh", external: true },
+    { label: "Telegram", href: "https://t.me/autonaichat", external: true },
   ],
 };
 
 export function Footer() {
   return (
-    <footer id="docs" className="mt-8 border-t border-black/10">
+    <footer className="mt-8 border-t border-black/10">
       <div className="mx-auto max-w-6xl px-4 py-10 md:px-6 md:py-14">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           <div>

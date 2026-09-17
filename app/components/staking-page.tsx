@@ -246,7 +246,7 @@ export function StakingPage() {
               ${formatTokenAmount(claimableUsdc, config.rewardDecimals, 2)}
             </div>
             <div className="pixel-sans mt-1 text-xs text-white/40">
-              claimable USDC
+              claimable USDG
             </div>
           </div>
 
@@ -318,11 +318,11 @@ export function StakingPage() {
               Claim rewards
             </h2>
             <p className="pixel-sans mb-4 text-xs leading-relaxed text-white/50">
-              Claims your full claimable USDC to your wallet.
+              Claims your full claimable USDG to your wallet.
             </p>
             <ActionButton disabled={!canInteract || claimableUsdc.isZero()}>
               {actionDisabledReason ??
-                `Claim $${formatTokenAmount(claimableUsdc, config.rewardDecimals, 2)} USDC`}
+                `Claim $${formatTokenAmount(claimableUsdc, config.rewardDecimals, 2)} USDG`}
             </ActionButton>
           </div>
 
@@ -336,7 +336,7 @@ export function StakingPage() {
               />
             </div>
             <p className="pixel-sans text-xs leading-relaxed text-white/50">
-              When on, your daily USDC rewards are used to buy{" "}
+              When on, your daily USDG rewards are used to buy{" "}
               <span className="dollar">$</span>AUTO and staked straight into your
               vault — only you can ever withdraw it. Compounded stake starts
               earning after the normal 24h.

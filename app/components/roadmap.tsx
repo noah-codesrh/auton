@@ -1,5 +1,5 @@
 import { useEffect, useRef, type ReactNode } from "react";
-import { DOCS_URL, TRADE_APP_URL } from "../lib/site-urls";
+import { TRADE_APP_URL } from "../lib/site-urls";
 import { Footer } from "./footer";
 import { PixelBackground } from "./pixel-background";
 import {
@@ -521,14 +521,6 @@ export function Roadmap() {
               className="pixel-sans inline-flex items-center justify-center rounded-xl bg-black px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-black/85"
             >
               Trade the live layers
-            </a>
-            <a
-              href={DOCS_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="pixel-sans inline-flex items-center justify-center rounded-xl border border-black/15 px-6 py-3 text-sm font-medium text-black transition-colors hover:border-black/30"
-            >
-              Read the Docs
             </a>
           </div>
         </div>

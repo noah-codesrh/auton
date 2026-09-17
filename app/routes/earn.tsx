@@ -6,7 +6,7 @@ export function meta({}: Route.MetaArgs) {
   return siteMeta({
     title: "Earn — Worker Node | Auton",
     description:
-      "Deploy an Auton provider node, contribute GPU compute, and earn USDC settlements.",
+      "Deploy an Auton provider node, contribute GPU compute, and earn USDG settlements.",
     path: "/earn",
   });
 }

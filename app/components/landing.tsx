@@ -1,4 +1,4 @@
-import { DOCS_URL, TRADE_APP_URL } from "../lib/site-urls";
+import { TRADE_APP_URL } from "../lib/site-urls";
 import { AutoTokenSection } from "./auto-token-section";
 import { FeatureGrid } from "./feature-grid";
 import { Footer } from "./footer";
@@ -72,14 +72,6 @@ export function Landing() {
                 >
                   Try Chat
                   <ArrowIcon />
-                </a>
-                <a
-                  href={DOCS_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="pixel-sans inline-flex items-center justify-center gap-2 rounded-xl border border-black/15 px-6 py-3 text-sm font-medium text-black transition-colors hover:border-black/30"
-                >
-                  Read the Docs
                 </a>
               </div>
 
