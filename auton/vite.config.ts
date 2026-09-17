@@ -37,7 +37,8 @@ export default defineConfig(({ mode }) => {
         env.VITE_SOLANA_CLUSTER || "mainnet-beta",
       ),
       "import.meta.env.VITE_AUTO_TOKEN_MINT": JSON.stringify(
-        env.VITE_AUTO_TOKEN_MINT || "",
+        env.VITE_AUTO_TOKEN_MINT ||
+          "0xdCED579A985eC88EC2Bd0af2eD9ac030F1AeC398",
       ),
       "import.meta.env.VITE_MASTER_VAULT_WALLET": JSON.stringify(
         env.VITE_MASTER_VAULT_WALLET || "",

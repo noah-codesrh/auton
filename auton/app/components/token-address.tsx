@@ -2,9 +2,11 @@ import { useState } from "react";
 import { isAddress } from "viem";
 import { useAutonConfig } from "../hooks/use-auton-config";
 
+const DEFAULT_AUTO_MINT = "0xdCED579A985eC88EC2Bd0af2eD9ac030F1AeC398";
+
 function resolveAutoAddress(fromConfig?: string) {
   const fromEnv = import.meta.env.VITE_AUTO_TOKEN_MINT?.trim() ?? "";
-  const candidate = fromEnv || fromConfig?.trim() || "";
+  const candidate = fromEnv || fromConfig?.trim() || DEFAULT_AUTO_MINT;
   return isAddress(candidate, { strict: false }) ? candidate : "";
 }
 
