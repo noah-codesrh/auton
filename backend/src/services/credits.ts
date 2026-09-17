@@ -168,7 +168,7 @@ export async function topUpCredits(params: {
   const decimals =
     asset === "USDC" ? env.USDC_TOKEN_DECIMALS : env.AUTO_TOKEN_DECIMALS;
   const mint = asset === "USDC" ? env.USDC_TOKEN_MINT : env.AUTO_TOKEN_MINT;
-  if (asset !== "USDC" && !mint) {
+  if (!mint) {
     throw new CreditError("$AUTO is not deployed yet. Top up with USDG.", 400);
   }
 
