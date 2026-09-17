@@ -7,7 +7,7 @@ Auton is an on-chain marketplace, built on Solana, for trading the resources tha
 This repository contains the **marketing/landing site** for Auton.
 
 - **App / trading terminal:** https://app.autonairh.xyz
-- **X:** https://x.com/autonai_rh
+- **X:** https://x.com/autonairh
 - **Telegram:** https://t.me/autonaichat
 
 ## What is Auton?

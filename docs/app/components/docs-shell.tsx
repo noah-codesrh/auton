@@ -91,7 +91,7 @@ function DocsFooter() {
             {APP_URL.replace(/^https?:\/\//, "")}
           </a>
           <a
-            href="https://x.com/autonai_robinhood"
+            href="https://x.com/autonairh"
             className="transition-colors hover:text-black/70"
             target="_blank"
             rel="noopener noreferrer"

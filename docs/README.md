@@ -99,5 +99,5 @@ Example section heading:
 
 - App: [autonairh.xyz](https://www.autonairh.xyz)
 - API: [api.autonairh.xyz](https://api.autonairh.xyz)
-- X: [@autonai_robinhood](https://x.com/autonai_robinhood)
+- X: [@autonairh](https://x.com/autonairh)
 - Telegram: [t.me/autonai_robinhood](https://t.me/autonai_robinhood)

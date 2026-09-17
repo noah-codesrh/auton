@@ -44,7 +44,7 @@ export function Header({ variant = "dark" }: { variant?: "light" | "dark" }) {
 
           <div className="flex items-center gap-3">
             <a
-              href="https://x.com/autonai_rh"
+              href="https://x.com/autonairh"
               target="_blank"
               rel="noopener noreferrer"
               className={`p-2 transition-colors ${icon}`}

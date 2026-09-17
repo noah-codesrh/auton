@@ -19,7 +19,7 @@ const FOOTER_LINKS = {
   ],
   Resources: [
     { label: "Blog", href: "#", external: false },
-    { label: "X", href: "https://x.com/autonai_rh", external: true },
+    { label: "X", href: "https://x.com/autonairh", external: true },
     { label: "Telegram", href: "https://t.me/autonaichat", external: true },
   ],
 };
