@@ -33,5 +33,13 @@
     "typescript": "^5.9.3",
     "vite": "^8.0.3",
     "vite-plugin-node-polyfills": "^0.28.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "bigint-buffer",
+      "bufferutil",
+      "esbuild",
+      "utf-8-validate"
+    ]
   }
 }
