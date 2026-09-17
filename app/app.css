@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Syne", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+html,
+body {
+  @apply bg-black text-white;
+  color-scheme: dark;
+}
+
+.pixel-serif-wrapper {
+  display: inline-block;
+}
+
+.pixel-serif {
+  font-family: "Syne", ui-sans-serif, system-ui, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.pixel-serif-logo,
+.pixel-serif-sub {
+  font-family: "Syne", ui-sans-serif, system-ui, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.pixel-serif-sub {
+  letter-spacing: -0.01em;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.pixel-sans {
+  font-family: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.6;
+}
+
+input.pixel-sans,
+textarea.pixel-sans {
+  font-family: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+.dollar {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-weight: 500;
+}
+
+pre.pixel-sans,
+code.pixel-sans {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.92em;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+/* ─── Roadmap ─────────────────────────────────────────────────────────── */
+
+/* A pulse of energy travelling down the timeline spine. */
+@keyframes roadmap-comet {
+  0% {
+    top: -12%;
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  88% {
+    opacity: 1;
+  }
+  100% {
+    top: 112%;
+    opacity: 0;
+  }
+}
+
+/* Breathing node marker for the current frontier. */
+@keyframes roadmap-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(128, 160, 193, 0.55);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(128, 160, 193, 0);
+  }
+}
+
+/* Marching dashes along the horizontal layer rail connectors. */
+@keyframes roadmap-dash {
+  to {
+    stroke-dashoffset: -14;
+  }
+}
+
+/* Gentle float for illustrations. */
+@keyframes roadmap-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.roadmap-comet {
+  animation: roadmap-comet 5.5s linear infinite;
+}
+
+.roadmap-pulse {
+  animation: roadmap-pulse 2.4s ease-out infinite;
+}
+
+.roadmap-dash {
+  stroke-dasharray: 3 5;
+  animation: roadmap-dash 1s linear infinite;
+}
+
+.roadmap-float {
+  animation: roadmap-float 6s ease-in-out infinite;
+}
+
+.roadmap-reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.roadmap-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .roadmap-comet,
+  .roadmap-pulse,
+  .roadmap-dash,
+  .roadmap-float {
+    animation: none;
+  }
+  .roadmap-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

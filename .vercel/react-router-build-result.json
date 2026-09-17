@@ -1,0 +1,166 @@
+{
+  "buildManifest": {
+    "routes": {
+      "root": {
+        "id": "root",
+        "file": "root.tsx",
+        "path": ""
+      },
+      "routes/home": {
+        "id": "routes/home",
+        "parentId": "root",
+        "file": "routes/home.tsx",
+        "index": true
+      },
+      "routes/markets": {
+        "id": "routes/markets",
+        "parentId": "root",
+        "file": "routes/markets.tsx",
+        "path": "markets"
+      },
+      "routes/roadmap": {
+        "id": "routes/roadmap",
+        "parentId": "root",
+        "file": "routes/roadmap.tsx",
+        "path": "roadmap"
+      },
+      "routes/dashboard": {
+        "id": "routes/dashboard",
+        "parentId": "root",
+        "file": "routes/dashboard.tsx",
+        "path": "dashboard"
+      },
+      "routes/staking": {
+        "id": "routes/staking",
+        "parentId": "root",
+        "file": "routes/staking.tsx",
+        "path": "staking"
+      },
+      "routes/treasury": {
+        "id": "routes/treasury",
+        "parentId": "root",
+        "file": "routes/treasury.tsx",
+        "path": "treasury"
+      },
+      "routes/earn": {
+        "id": "routes/earn",
+        "parentId": "root",
+        "file": "routes/earn.tsx",
+        "path": "earn"
+      }
+    }
+  },
+  "reactRouterConfig": {
+    "appDirectory": "/Users/ahmedmakinde/Desktop/development/auton-ai/auton/app",
+    "basename": "/",
+    "buildDirectory": "/Users/ahmedmakinde/Desktop/development/auton-ai/auton/build",
+    "future": {
+      "unstable_optimizeDeps": false,
+      "v8_passThroughRequests": true,
+      "v8_trailingSlashAwareDataRequests": true,
+      "unstable_previewServerPrerendering": false,
+      "v8_middleware": true,
+      "v8_splitRouteModules": true,
+      "v8_viteEnvironmentApi": true
+    },
+    "routes": {
+      "root": {
+        "id": "root",
+        "file": "root.tsx",
+        "path": ""
+      },
+      "routes/home": {
+        "id": "routes/home",
+        "parentId": "root",
+        "file": "routes/home.tsx",
+        "index": true
+      },
+      "routes/markets": {
+        "id": "routes/markets",
+        "parentId": "root",
+        "file": "routes/markets.tsx",
+        "path": "markets"
+      },
+      "routes/roadmap": {
+        "id": "routes/roadmap",
+        "parentId": "root",
+        "file": "routes/roadmap.tsx",
+        "path": "roadmap"
+      },
+      "routes/dashboard": {
+        "id": "routes/dashboard",
+        "parentId": "root",
+        "file": "routes/dashboard.tsx",
+        "path": "dashboard"
+      },
+      "routes/staking": {
+        "id": "routes/staking",
+        "parentId": "root",
+        "file": "routes/staking.tsx",
+        "path": "staking"
+      },
+      "routes/treasury": {
+        "id": "routes/treasury",
+        "parentId": "root",
+        "file": "routes/treasury.tsx",
+        "path": "treasury"
+      },
+      "routes/earn": {
+        "id": "routes/earn",
+        "parentId": "root",
+        "file": "routes/earn.tsx",
+        "path": "earn"
+      }
+    },
+    "routeDiscovery": {
+      "mode": "initial"
+    },
+    "serverBuildFile": "index.js",
+    "serverModuleFormat": "esm",
+    "ssr": false,
+    "subResourceIntegrity": false,
+    "allowedActionOrigins": false,
+    "unstable_routeConfig": [
+      {
+        "id": "root",
+        "path": "",
+        "file": "root.tsx",
+        "children": [
+          {
+            "file": "routes/home.tsx",
+            "index": true
+          },
+          {
+            "file": "routes/markets.tsx",
+            "path": "markets"
+          },
+          {
+            "file": "routes/roadmap.tsx",
+            "path": "roadmap"
+          },
+          {
+            "file": "routes/dashboard.tsx",
+            "path": "dashboard"
+          },
+          {
+            "file": "routes/staking.tsx",
+            "path": "staking"
+          },
+          {
+            "file": "routes/treasury.tsx",
+            "path": "treasury"
+          },
+          {
+            "file": "routes/earn.tsx",
+            "path": "earn"
+          }
+        ]
+      }
+    ]
+  },
+  "viteConfig": {
+    "build": {
+      "assetsDir": "assets"
+    }
+  }
+}
