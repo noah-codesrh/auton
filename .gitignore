@@ -1,40 +1,14 @@
-# Dependencies
-node_modules/
+.DS_Store
 .pnpm-store/
+node_modules/
 
-# Environment
 .env
 .env.*
 !.env.example
 
-# Build output
+.react-router/
 build/
 dist/
-
-# React Router
-.react-router/
-
-# Vite
-*.local
-
-# Logs
-logs/
-*.log
-npm-debug.log*
-pnpm-debug.log*
-
-# OS
-.DS_Store
-Thumbs.db
-
-# IDE
-.idea/
-.vscode/
-*.swp
-*.swo
-
-# TypeScript
-*.tsbuildinfo
-
-# Test / coverage
 coverage/
+*.tsbuildinfo
+*.log

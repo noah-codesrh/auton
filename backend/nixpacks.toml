@@ -1,0 +1,3 @@
+# Pin Node 22 — pnpm is auto-detected from packageManager in package.json
+[variables]
+NIXPACKS_NODE_VERSION = "22"
