@@ -38,7 +38,6 @@ CORS_ORIGINS=https://autonairh.xyz,https://www.autonairh.xyz,https://app.autonai
 | `SUPABASE_URL` | Project Settings → API |
 | `SUPABASE_SERVICE_ROLE_KEY` | `secret` / `service_role` (`sb_secret_…`) |
 | `JWT_SECRET` | Min 32 chars — `openssl rand -base64 64` |
-| `SOLANA_RPC_URL` | Legacy boot var. `https://rpc.mainnet.chain.robinhood.com` is fine |
 | `MASTER_VAULT_WALLET` | Treasury `0x…` that receives USDG |
 | `OPENROUTER_API_KEY` | openrouter.ai |
 
@@ -46,6 +45,7 @@ CORS_ORIGINS=https://autonairh.xyz,https://www.autonairh.xyz,https://app.autonai
 
 | Variable | Value |
 | --- | --- |
+| `SOLANA_RPC_URL` | Optional. Defaults to Robinhood RPC |
 | `ROBINHOOD_RPC_URL` | `https://rpc.mainnet.chain.robinhood.com` |
 | `USDC_TOKEN_MINT` | `0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168` |
 | `VAULT_PRIVATE_KEY` | `0x` key for `MASTER_VAULT_WALLET` |

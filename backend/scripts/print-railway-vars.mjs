@@ -34,4 +34,4 @@ for (const line of lines) {
 console.log("Paste the block below into Railway → service → Variables → Raw Editor:\n");
 console.log("# Do NOT set PORT — Railway injects it automatically.\n");
 console.log([...production, ...vars].join("\n"));
-console.log("\n# After saving, deploy (or Redeploy). Check logs for [env] OK: on all 6 required vars.");
+console.log("\n# After saving, deploy (or Redeploy). Check logs for [env] OK: on all 5 required vars.");

@@ -12,7 +12,6 @@ const requiredKeys = [
   "SUPABASE_URL",
   "SUPABASE_SERVICE_ROLE_KEY",
   "JWT_SECRET",
-  "SOLANA_RPC_URL",
   "MASTER_VAULT_WALLET",
   "OPENROUTER_API_KEY",
 ] as const;

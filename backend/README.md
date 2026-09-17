@@ -50,14 +50,13 @@ Verify: `GET http://localhost:4000/health/db`
 
 ## Railway deployment
 
-The service needs **6 required variables** on the **auton-backend service** (not just the project). The start script exits immediately if any are missing, so the healthcheck at `/health` never succeeds.
+The service needs **5 required variables** on the **auton-backend service** (not just the project). The start script exits immediately if any are missing, so the healthcheck at `/health` never succeeds.
 
 | Variable | Notes |
 |----------|-------|
 | `SUPABASE_URL` | Project Settings → API → Project URL |
 | `SUPABASE_SERVICE_ROLE_KEY` | Project Settings → API → `service_role` / `sb_secret_…` |
 | `JWT_SECRET` | Min 32 characters — `openssl rand -base64 64` |
-| `SOLANA_RPC_URL` | `https://rpc.mainnet.chain.robinhood.com` is fine |
 | `MASTER_VAULT_WALLET` | Treasury `0x` address that receives USDG |
 | `OPENROUTER_API_KEY` | From [openrouter.ai](https://openrouter.ai) |
 
